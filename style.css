@@ -1,0 +1,103 @@
+.row{
+display: flex;
+justify-content: center;
+padding-top: 30px;
+}
+.row>:nth-child(2n){
+margin: auto 30px;
+margin-top: -20px;
+padding-bottom: 40px;
+}
+.row>:nth-child(2n)>.price{
+	font-weight: bold;
+	color: #fff;
+}
+.row>:nth-child(2n)>.product{
+	text-align: center;
+}
+/*.row>:nth-child(2n)::before {
+content: url(https://image.flaticon.com/icons/svg/595/595007.svg);
+	position: absolute;	
+	width: 0;
+	height: 0;
+	border-top: 100px solid red; 
+	border-left: 100px solid transparent;
+}*/
+
+.triangle {
+position: fixed;
+	width: 0;
+	height: 0;
+	border-top: 60px solid red; 
+	border-left: 60px solid transparent;	
+}
+.col_1, .col_3{
+height: 420px;
+}
+.row>:nth-child(2n)>.round{
+background-color: red;
+width: 90px;
+height: 90px;
+
+}
+.product{
+background-color: #357dc5;
+height: 60px;
+padding-top: 15px;
+
+}
+.col{
+text-align: center;
+background-color: #f1f1f1;
+}
+.round {
+width: 80px;
+height: 80px;
+border: 2px solid #27527d;
+border-radius: 50%;
+position: relative;
+top: -40px;
+margin: auto;
+background-color: #f1f1f1;
+}
+.price {
+position: relative;
+top: -105px;
+}
+.item{
+background-color:#f1f1f1;
+padding-left: 4px;
+padding-right: 4px;
+}
+
+.item li {
+border-top: 1px solid #cdcdcd;
+margin: 0;
+padding: 6px;
+list-style: none;
+}
+.button{
+vertical-align: middle; 
+padding-top:4px;
+padding-bottom: 15px;
+}
+.item_1::before {
+content: "✱ ";
+}
+.item_2::before {
+content: "☬ ";
+}
+.item_3::before {
+content: "❂ ";
+}
+.item_4::before {
+content: "♡ ";
+}
+.item_5::before {
+content: "♛ ";
+}
+button{
+background-color: #357dc5;
+border-radius: 15%;
+padding: 3px 10px;
+}
